@@ -1,50 +1,9 @@
-body {
-    background-color: var(--backgroundmain);
-    min-height: 100vh;
-    overflow-x: hidden;
-}
-
-header {
-    display: flex;
-    padding: 10px 20px;
-    background-color: var(--backgroundmain);
-    justify-content: space-between;
-    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5));
-}
-
-div#head {
-    display: flex;
-    align-items: center;
-}
-
-div#head > img {
-    max-width: 60px;
-    min-width: 60px;
-    border-radius: 50%;
-    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
-}
-
-div#head > h1 {
-    font-family: var(--fontmain);
-    padding-left: 20px;
-    color: rgb(255, 255, 255);
-    text-shadow: var(--textshadow);
-}
 
 nav {
-    display: flex;
-    align-items: center;
+    display: none;
 }
 
-nav > a {
-    text-decoration: none;
-    color: rgb(210, 209, 209);
-    text-shadow: var(--textshadow);
-    font-family: var(--fontmain);
-    font-weight: 500;
-    font-size: 20px;
-    padding: 0px 10px;
-}
+
 
 nav > a:hover {
     transform: scale(1.05);
@@ -53,9 +12,10 @@ nav > a:hover {
 }
 
 main {
-    padding: 60px 20px;
+    padding: 10px 20px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
 }
 
 section.img {
@@ -65,7 +25,7 @@ section.img {
 }
 
 img.main {
-    max-width: 450px;
+    max-width: 250px;
     width: 100%;
 }
 
@@ -75,20 +35,21 @@ section.text {
     justify-content: center;
     flex: 1 1 450px;
     max-width: 700px;
-    padding-right: 50px;
+    padding: 20px 10px;
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 25px;
     color: white;
     font-family: var(--fontmain);
     text-shadow: var(--textshadow);
 }
 
 p {
-    font-size: 18px;
+    font-size: 15px;
     color: rgb(216, 216, 216);
     text-align: justify;
     padding: 10px 0px;
     text-shadow: var(--textshadow);
 }
+
