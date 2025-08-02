@@ -81,7 +81,6 @@ main {
 }
 
 section.img {
-    flex: 1 1 200px;
     display: flex;
     align-items: center;
 }
@@ -89,6 +88,9 @@ section.img {
 img.main {
     max-width: 650px;
     width: 100%;
+    height: auto;
+    max-height: 60vh; 
+    object-fit: contain;
 }
 
 section.text {
@@ -98,17 +100,20 @@ section.text {
     flex: 1 1 450px;
     max-width: 800px;
     padding-right: 50px;
+    margin: auto;
 }
 
 h2 {
-    font-size: 300%;
+    font-size: clamp(3rem, 3vw, 4rem);
+    font-size: clamp(3rem, 3vh, 4rem);
     color: white;
     font-family: var(--fontmain);
     text-shadow: var(--textshadow);
 }
 
 p {
-    font-size: 120%;
+    font-size: clamp(0.6rem, 2vw, 1.2rem);
+    font-size: clamp(0.6rem, 2vw, 1.2rem);
     color: rgb(216, 216, 216);
     text-align: justify;
     padding: 10px 0px;
@@ -120,12 +125,17 @@ h2, p {
   transition: font-size 0.5s ease;
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 1150px) {
   h2 {
     font-size: 34px;
   }
 
+  img.main {
+    max-width: 650px;
+    width: 80%;    
+  }
+
   p {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
